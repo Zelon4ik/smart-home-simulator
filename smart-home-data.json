@@ -1,0 +1,97 @@
+[
+  {
+    "id": "4e88cd90-fecf-469e-ab15-98e0bd5c85b8",
+    "name": "Lisette Cummerata",
+    "rooms": [
+      {
+        "id": "70380842-0816-49a3-8647-1e787366ff31",
+        "name": "conservatory",
+        "devices": [
+          {
+            "id": "aad77306-b62d-4667-a394-0955423ec8d8",
+            "name": "Huawei P20 Pro",
+            "type": "Light",
+            "isOn": true,
+            "powerConsumption": 32.8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2dc35775-3ca4-422c-bb59-cd2cc705eedb",
+    "name": "Zella Upton",
+    "rooms": [
+      {
+        "id": "d0a96b9c-4385-4d72-9213-dda047f7e238",
+        "name": "living room",
+        "devices": [
+          {
+            "id": "8d0d21f2-452d-4e59-8a73-179b8b3bd46b",
+            "name": "Huawei Mate 10 Pro",
+            "type": "Light",
+            "isOn": true,
+            "powerConsumption": 42.81
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6be259fd-c9b6-4a31-a7a2-179451ada8a2",
+    "name": "Miss Edmond Jacobson",
+    "rooms": [
+      {
+        "id": "ca5af150-3bb8-4f1b-bc29-2cd9184a6aa3",
+        "name": "master bedroom",
+        "devices": [
+          {
+            "id": "8fc4fe9e-6a9f-4729-b69a-42f2f9811cb2",
+            "name": "Google Pixel 4a",
+            "type": "Light",
+            "isOn": true,
+            "powerConsumption": 52.79
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "241e0b18-c894-48eb-b2fb-7f30dcfb8753",
+    "name": "Jettie Brown",
+    "rooms": [
+      {
+        "id": "4fa16a3f-7cb6-4a19-b36d-2e4510f1dd44",
+        "name": "kitchen",
+        "devices": [
+          {
+            "id": "52c5ef25-cc49-4306-813c-319f25f7b2e9",
+            "name": "iPhone 6S / 6S Plus",
+            "type": "Light",
+            "isOn": true,
+            "powerConsumption": 50.53
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eb00b560-1586-486a-b298-9cded99f8164",
+    "name": "Cody Frami V",
+    "rooms": [
+      {
+        "id": "57295d7c-a10e-445a-a7a7-198a7c03c1ff",
+        "name": "ensuite bathroom",
+        "devices": [
+          {
+            "id": "37fba9de-f4fe-4001-9c6a-4e87e9f3c3df",
+            "name": "OnePlus 5",
+            "type": "Light",
+            "isOn": true,
+            "powerConsumption": 67.55
+          }
+        ]
+      }
+    ]
+  }
+]

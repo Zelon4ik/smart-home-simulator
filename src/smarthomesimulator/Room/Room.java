@@ -1,25 +1,22 @@
 package smarthomesimulator.Room;
 
-public class Room {
+import smarthomesimulator.Device.Device;
+import smarthomesimulator.ValidationUtils;
 
+import java.util.List;
+
+public class Room {
     private final String id;
     private final String name;
-    private final int floor;
+    private final List<Device> devices;
 
-    public Room(String id, String name, int floor) {
-        if (id == null || id.isBlank()) {
-            throw new IllegalArgumentException("Room id cannot be empty");
-        }
-        if (name == null || name.isBlank()) {
-            throw new IllegalArgumentException("Room name cannot be empty");
-        }
-        if (floor < 0) {
-            throw new IllegalArgumentException("Floor cannot be negative");
-        }
+    public Room(String id, String name, List<Device> devices) {
+        ValidationUtils.requireNotBlank(id, "Room ID");
+        ValidationUtils.requireNotBlank(name, "Room name");
+        ValidationUtils.requireNotNull(devices, "Devices list");
 
         this.id = id;
         this.name = name;
-        this.floor = floor;
+        this.devices = devices;
     }
 }
-

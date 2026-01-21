@@ -1,29 +1,22 @@
 package smarthomesimulator.User;
 
-public class User {
+import smarthomesimulator.Room.Room;
+import smarthomesimulator.ValidationUtils;
 
+import java.util.List;
+
+public class User {
     private final String id;
     private final String name;
-    private final String email;
-    private final String role;
+    private final List<Room> rooms;
 
-    public User(String id, String name, String email, String role) {
-        if (id == null || id.isBlank()) {
-            throw new IllegalArgumentException("User id cannot be empty");
-        }
-        if (name == null || name.isBlank()) {
-            throw new IllegalArgumentException("User name cannot be empty");
-        }
-        if (email == null || !email.contains("@")) {
-            throw new IllegalArgumentException("Invalid email");
-        }
-        if (role == null || role.isBlank()) {
-            throw new IllegalArgumentException("User role cannot be empty");
-        }
+    public User(String id, String name, List<Room> rooms) {
+        ValidationUtils.requireNotBlank(id, "User ID");
+        ValidationUtils.requireNotBlank(name, "User name");
+        ValidationUtils.requireNotNull(rooms, "Rooms");
 
         this.id = id;
         this.name = name;
-        this.email = email;
-        this.role = role;
+        this.rooms = rooms;
     }
 }
